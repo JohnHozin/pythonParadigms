@@ -1,0 +1,5 @@
+sum([X], X).
+sum([X|T], Sum) :- sum(T, Sum1), Sum is Sum1 + X.
+
+% Вывод:
+sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], Sum).
